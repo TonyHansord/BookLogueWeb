@@ -1,11 +1,32 @@
-.brand-color {
-  background-color: #3D5A7C;
+body {
+  font-family: 'Saira Condensed', sans-serif;
+}
+hr {
+  border-style: dashed;
+}
+p, li{
+  font-family: 'Roboto', sans-serif;
+}
+#social hr {
+  background-color: white;
 }
 .logo {
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  border-radius: 100px;
+}
+.nav-item {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.sign-in {
+  padding: 5px;
+}
+.sign-in-btn {
+  width: 100px;
+}
+.brand-color {
+  background-color: #1394B0;
 }
 .placeholder-body {
   background-color: #314863;
@@ -25,4 +46,184 @@
 }
 .coming_soon {
   text-align: center;
+}
+
+.colored-section {
+
+  background-color: #1394B0;
+  color: white;
+}
+.white-section {
+  background-color: #D5FFFF;
+  color: black;
+}
+.title-section {
+  background-color: #1394B0;
+  background-image: url("/img/bg_transparent.png");
+}
+
+
+#social {
+  text-align: center;
+  padding: 3%;
+}
+.social-icons {
+  padding: 20px 10px 20px;
+  color: rgba(255,255,255,.5);
+}
+.social-icons:hover {
+  color: rgba(255,255,255,.8);
+}
+.container-fluid {
+  padding: 2% 15% 2%;
+  text-align: center;
+}
+.row {
+  padding: 3% 2%;
+}
+#title .row {
+  margin: 5% 0;
+}
+#tracker .header-row {
+  margin-top: 10%;
+  padding: 1% 1%;
+}
+#books .header-row {
+  padding: 1% 1%;
+}
+.header-row h2{
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 5%;
+}
+.col-lg-6 {
+  padding: 2%
+}
+.footer {
+  padding: 0 20%;
+}
+.footer-logo {
+  text-align: left;
+
+}
+.footer-logo a {
+  color: white;
+}
+.footer-logo a:hover {
+  text-decoration: none;
+}
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  float: left;
+}
+
+
+.cta {
+  text-align: right;
+}
+.footer-title {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 5px 0;
+}
+.footer-cta {
+  margin: 16px 5px;
+}
+.legal-container {
+  padding: 0% 15%;
+}
+.legal-container p, li{
+  text-align: left;
+}
+.legal-container ul{
+  padding-left: 100px;
+}
+#terms, #privacy{
+  background-color: lightgray;
+}
+.legal {
+  background-color: white;
+  margin: 0;
+  padding: 2% 8% 8%;
+}
+.legal-header {
+  background-color: rgba(255,255,255,.5);
+  margin: 0;
+}
+.legal-header h1 {
+  padding: 2%;
+}
+
+.legal h2 {
+  padding: 2%;
+}
+.policies {
+  padding: 5px;
+  color: rgba(255,255,255,.5);
+
+}
+.policies:hover {
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+}
+.title-img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.title-head {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1%;
+}
+#tracker {
+  padding: 0;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .title-img {
+    width: 70%;
+    position: relative;
+    left: 0;
+    z-index: 0;
+  }
+  .cta {
+    text-align: center;
+  }
+  .footer-logo {
+    padding: 1% 5% 1% 7%;
+  }
+}
+.features img {
+  width: 100%;
+  padding: 5%;
+}
+.description {
+  padding: 5%;
+}
+.description h3, p {
+  padding: 0 5%;
+}
+.white-section .feature-icons {
+  color: #2EAACA;
+  font-size: 4rem;
+  padding: 10px;
+}
+.white-section .feature-icons:hover {
+  color: #39c3ef;
+}
+.colored-section .feature-icons {
+  color: rgba(255,255,255,.8);
+  font-size: 4rem;
+  padding: 10px;
+}
+.colored-section .feature-icons:hover {
+  color: rgba(255,255,255,1);
 }
