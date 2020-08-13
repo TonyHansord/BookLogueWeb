@@ -1,18 +1,20 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Saira+Condensed:wght@100;400;700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="styles.css">
 
-  <title>BookLogue - Log your books!!</title>
+  <title>BookLogue - Track books, and add notes</title>
 </head>
 
 <body>
@@ -37,17 +39,16 @@
           </li>
         </ul>
 
-        <ul class="navbar-nav ml-auto">
+        <!-- <section id="firebaseui-auth-container"></section> -->
+        <!-- <ul class="navbar-nav ml-auto">
           <li class="nav-item sign-in">
-            <button class="btn btn-light sign-in-btn" type="button"></i>Sign Up</button>
-          </li>
-          <li class="nav-item sign-in">
-            <button class="btn btn-outline-light sign-in-btn" type="button">Log In</button>
+            <h4 id="user-name"></h3>
+            <button class="btn btn-light sign-in-btn" type="button"></i>Sign In</button>
           </li>
         </ul>
-      </div>
+      </div> -->
     </nav>
-      <div class="container-fluid title-section">
+    <div class="container-fluid title-section">
       <div class="row">
         <div class="col-lg-6">
           <h1 class="title-head">Track your reading and notes</h1>
@@ -63,9 +64,9 @@
     <div class="container-fluid">
       <div class="row header-row">
         <div class="col-lg-12">
-          <hr>
-        <h2>Add a goal ...and keep track of it</h2>
-      </div>
+          <!-- <hr> -->
+          <!-- <h2>Add a goal ...and keep track of it</h2> -->
+        </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
@@ -93,8 +94,8 @@
     <div class="container-fluid">
       <div class="row header-row">
         <div class="col-lg-12">
-        <h2>Build your library</h2>
-      </div>
+          <h2>Build your library</h2>
+        </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
@@ -103,11 +104,11 @@
           </div>
           <div class="description">
             <h3>Classify your books</h3>
-            <p>ndfaksfjadksfjaksdfhj aksfadkshfalsfhals</p>
+            <p>Specify the genre, subgenre and book format.</p>
           </div>
           <div class="description">
             <h3>See what books have been completed</h3>
-            <p>dksfhadksfhadksfhadksfhaksdfhkasdfha kdshf</p>
+            <p>Once you've finished your book, mark it as complete and see it added to your goal.</p>
           </div>
         </div>
         <div class="col-lg-6">
@@ -122,8 +123,8 @@
     <div class="container-fluid">
       <div class="row header-row">
         <div class="col-lg-12">
-        <h2>Create and collate notes</h2>
-      </div>
+          <h2>Create and collate notes</h2>
+        </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
@@ -135,11 +136,11 @@
           </div>
           <div class="description">
             <h3>Note down your favorite parts</h3>
-            <p>ndfaksfjadksfjaksdfhj aksfadkshfalsfhals</p>
+            <p>Found that golden nugget in that book you’re reading? Add a note to go back to it later.</p>
           </div>
           <div class="description">
             <h3>Keep your notes organised</h3>
-            <p>dksfhadksfhadksfhadksfhaksdfhkasdfha kdshf</p>
+            <p>Notes are organised by book and are easily editable.</p>
           </div>
         </div>
 
@@ -151,7 +152,9 @@
     <div class="container-fluid footer">
       <div class="row cta-row">
         <div class="col-lg-6 footer-logo">
-          <a href="index.html"><img src="img/logo_transparent.png" alt="logo"><h1 class="footer-title">BookLogue</h1></a>
+          <a href="index.html"><img src="img/logo_transparent.png" alt="logo">
+            <h1 class="footer-title">BookLogue</h1>
+          </a>
         </div>
         <div class="col-lg-6 cta">
           <button class="btn btn-dark btn-lg footer-cta" type="button"><i class="fab fa-apple"></i> Download</button>
@@ -172,34 +175,16 @@
     </div>
   </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <!-- <script src="index.js" charset="utf-8"></script> -->
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCQjETsOzuCs5UdjL7ZQ2TbpCkGSE9-VsI",
-    authDomain: "booklogue-d3180.firebaseapp.com",
-    databaseURL: "https://booklogue-d3180.firebaseio.com",
-    projectId: "booklogue-d3180",
-    storageBucket: "booklogue-d3180.appspot.com",
-    messagingSenderId: "919641155505",
-    appId: "1:919641155505:web:6e1c0fedec5f476c44bf90",
-    measurementId: "G-D39EN4VWNJ"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
 </body>
 
 </html>

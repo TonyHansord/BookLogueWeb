@@ -7,6 +7,13 @@ hr {
 p, li{
   font-family: 'Roboto', sans-serif;
 }
+#user-name {
+  color: white;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 #social hr {
   background-color: white;
 }
@@ -15,7 +22,7 @@ p, li{
   height: 40px;
   margin-right: 10px;
 }
-.nav-item {
+.nav-item{
   padding-left: 18px;
   padding-right: 18px;
 }
@@ -59,7 +66,7 @@ p, li{
 }
 .title-section {
   background-color: #1394B0;
-  background-image: url("/img/bg_transparent.png");
+  background-image: url("img/bg-transparent.png");
 }
 
 
@@ -90,6 +97,10 @@ p, li{
 }
 #books .header-row {
   padding: 1% 1%;
+
+}
+#books {
+background-image: url("img/bg-transparent.png");
 }
 .header-row h2{
   font-size: 2.5rem;
@@ -134,7 +145,7 @@ p, li{
   margin: 16px 5px;
 }
 .legal-container {
-  padding: 0% 15%;
+  padding: 0 15%;
 }
 .legal-container p, li{
   text-align: left;
@@ -158,7 +169,7 @@ p, li{
   padding: 2%;
 }
 
-.legal h2 {
+.legal {
   padding: 2%;
 }
 .policies {
