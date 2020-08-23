@@ -17,9 +17,6 @@ p, li, .footer-menu{
 #social hr {
   background-color: white;
 }
-.appStoreLink {
-  width: 70%;
-}
 .logo {
   width: 40px;
   height: 40px;
@@ -152,7 +149,7 @@ background-image: url("img/bg-transparent.png");
 .footer-cta {
   margin: 16px 5px;
 }
-.legal-container {
+.legal-container, .thankyou-container {
   padding: 0 15%;
 }
 .legal-container p, li{
@@ -160,6 +157,10 @@ background-image: url("img/bg-transparent.png");
 }
 .legal-container ul{
   padding-left: 100px;
+}
+.thankyou {
+  text-align: center;
+  margin-bottom: 30%;
 }
 #terms, #privacy, #support{
   background-color: lightgray;
