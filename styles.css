@@ -17,6 +17,9 @@ p, li, .footer-menu{
 #social hr {
   background-color: white;
 }
+.appStoreLink {
+  width: 70%;
+}
 .logo {
   width: 40px;
   height: 40px;
