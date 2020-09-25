@@ -1,16 +1,16 @@
 body {
-  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 hr {
   border-style: dashed;
 }
 p, li, .footer-menu{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 #user-name {
   color: white;
   display: inline;
-  font-family: 'Roboto', sans-serif;
+  ffont-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: 300;
 }
 
@@ -239,7 +239,7 @@ form .btn {
     display: block;
   }
   .title-img {
-    width: 70%;
+    width: 90%;
     position: relative;
     left: 0;
     z-index: 0;
@@ -314,7 +314,7 @@ form .btn {
   padding: 5%;
 }
 #download img {
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
